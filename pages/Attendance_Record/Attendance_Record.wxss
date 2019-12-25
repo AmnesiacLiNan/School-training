@@ -1,0 +1,89 @@
+/* pages/Attendance_Record/Attendance_Record.wxss */
+
+page {
+  background: #f5f5f5;
+}
+
+.top {
+  background: white;
+  padding: 36rpx 0;
+  display: flex;
+}
+
+.top view {
+  text-align: center;
+  width: 33%;
+  font-size: 28rpx;
+}
+
+.top_view {
+  border-right: 1px solid #e6e6e6;
+  color: #30CD76;
+}
+
+.top_view2 {
+  border-right: 1px solid #e6e6e6;
+  color: #FA4B5F;
+}
+
+.top_view3 {
+  border-right: 1px solid #e6e6e6;
+  color: #FA714B;
+}
+.box{
+  width: 92%;
+  margin: 30rpx auto 0;
+  background: white; 
+}
+.box_top{
+  padding: 32rpx 0;
+  font-size: 26rpx;
+  border-bottom: 1px solid #F5F5F5;
+}
+.box_text2{
+  float: right;
+  margin-right: 30rpx;
+}
+.box_text1{
+  margin-left: 30rpx;
+  color: #333;
+}
+.box_bottom{
+  margin: 0 30rpx;
+}
+.box_text3{
+  color: #999999;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+.box_bottom2{
+  margin-top: 30rpx;
+  padding-bottom: 40rpx;
+}
+.box_text4{
+  font-size: 32rpx;
+  color: #333333;
+}
+.box_text5{
+  font-size: 28rpx;
+  color: #333333;
+  float: right;
+}
+.box_botton{
+  background: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12rpx 0;
+}
+.botton{
+  width: 92%;
+  text-align: center;
+  margin: 0 auto;
+  background: #30CD76;
+  border-radius:30px;
+  height: 76rpx;
+  line-height: 76rpx;
+  color: white;
+  font-size: 30rpx; 
+}

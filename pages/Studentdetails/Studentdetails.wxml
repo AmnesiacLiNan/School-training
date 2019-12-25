@@ -1,0 +1,47 @@
+<view class='top3'>
+  <view class='box_left'>
+    <!-- 名字 -->
+    <view class='name'>李南溪{{}}</view>
+    <!-- 性别 -->
+    <view class='box_text'>性别：{{}}</view>
+    <!-- 城市 -->
+    <view class='box_text'>城市：{{}}</view>
+    <!-- 学校 -->
+    <view class='box_text'>学校：{{}}</view>
+  </view>
+  <!-- 中间部分 -->
+  <view class='box_left'>
+    <!-- 手机号 -->
+    <view class='name'> {{}}</view>
+    <!-- 年龄 -->
+    <view class='box_text'>年龄：{{}}</view>
+    <!-- 年级 -->
+    <view class='box_text'>年级：{{}}</view>
+  </view>
+</view>
+<view class='box'>
+  <!-- 订单详情上 -->
+  <view class='box_xq'>
+    <view class='box_img'>
+      <image class='img3' src="http://39.108.117.174:999{{item2[0].imageUrl}}" />
+    </view>
+    <view class='box_name'>
+      <view class='name1'>{{item2[0].name}}</view>
+      <view class='name2'>{{item2[0].semesterName}}</view>
+    </view>
+  </view>
+  <!-- 订单详情下 -->
+  <view class='box_time'>
+    <view class='time1'>课程时间：
+      <label>{{startDate}}~{{endDate}}</label>
+    </view>
+    <view class='time1'>上课时间：
+      <label>{{item2[0].schooltime}}</label>
+    </view>
+  </view>
+</view>
+<view class='buttom'>
+  <view>签到</view>
+  <view>缺勤</view>
+  <view>请假</view>
+</view>

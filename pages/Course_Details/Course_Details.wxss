@@ -1,0 +1,177 @@
+/* pages/Course_Details/Course_Details.wxss */
+
+.swiper {
+  width: 100%;
+  height: 750rpx;
+}
+.image_view{
+  width: 100%;
+  height: 750rpx;
+}
+.slide-image{
+  width: 100%;
+}
+.bottom_img{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100rpx;
+}
+.list {
+  position: relative;
+  padding: 40rpx 30rpx 50rpx 30rpx;
+}
+
+.name {
+  font-weight: 600;
+  color: #333;
+  font-size: 34rpx;
+  margin-bottom: 40rpx;
+}
+
+.time {
+  color: #999;
+  font-size: 26rpx;
+}
+
+.time label {
+  color: #333;
+}
+
+.money_view {
+}
+
+.money_view_text {
+  color: #fe6d50;
+  font-size: 48rpx;
+}
+
+.money_view_label {
+  font-size: 24rpx;
+}
+
+.money_view_label2 {
+  font-size: 24rpx;
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+
+.phone {
+  background: #30cd76;
+  height: 60rpx;
+  width: 180rpx;
+  color: white;
+  border-radius: 12px;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  text-align: center;
+  position: absolute;
+  right: 30rpx;
+  top: 194rpx;
+}
+
+.Partition {
+  height: 20rpx;
+  background: #f6f6f6;
+}
+
+.bottom_text {
+  font-size: 32rpx;
+  color: #333;
+  padding: 36rpx 30rpx;
+  font-weight: 600;
+}
+
+.bottom2 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  height: 98rpx;
+  border-top: 1px solid #eaeaea;
+}
+
+.bottom2_view {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  margin-top: 12rpx;
+}
+
+.bottom2_view view {
+  text-align: center;
+  line-height: 76rpx;
+  margin-left: 30rpx;
+  border-radius: 10px;
+  width: 330rpx;
+  height: 76rpx;
+}
+
+.bottom2_label {
+  color: #333;
+  font-weight: 600rpx;
+  font-size: 28rpx;
+  border: 1px solid #e6e6e6;
+}
+
+.bottom2_label2 {
+  font-weight: 600rpx;
+  color: white;
+  font-size: 28rpx;
+  background: #30cd76;
+}
+
+.masking {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+.box{
+  position: fixed;
+  z-index: 9999;
+  width: 580rpx;
+  height: 360rpx;
+  background: white;
+  border-radius:10px;
+  bottom:488rpx;
+  left: 86rpx; 
+}
+.box_text{
+  width: 100%;
+  text-align: center;
+  margin: 50rpx 0;
+  color: #999;
+  font-size: 38rpx;
+  font-weight: 500;
+}
+.box_phone{
+  width: 100%;
+  text-align: center;
+  color: #333333;
+  font-size: 38rpx;
+}
+.box_botton{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding-bottom: 50rpx;
+}
+.box_botton view{
+  width: 220rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  text-align: center;
+  border-radius:10px; 
+}
+.box_botton_text{
+  border: 1px solid #b3b3b3;
+  margin-left: 40rpx;
+}
+.box_botton_text2{
+  background: #30CD76;
+  color: white;
+  margin-left: 60rpx;
+}

@@ -1,0 +1,82 @@
+<view class="show">
+  <!-- 搜索框 -->
+  <view class="top" bindtap='search'>
+    <image class="top_img" src="../../image/ss.png"></image>
+    <text class="top_input">搜索课程</text>
+  </view>
+  <!-- 轮播图 -->
+  <swiper circular="true" interval="2000" autoplay="true" class="swiper_img">
+    <block wx:for="{{image_item}}" wx:key>
+      <swiper-item>
+        <image src="http://39.108.117.174:999{{item.imageUrl}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 列表展示 -->
+  <view class="Introduction">
+    <view class="Introduction_block">
+      <view bindtap="" class="Introduction_view">
+        <image class="Introduction_img" src="../../image/SchoolProfile.png"></image>
+        <view class="Introduction_text">学校简介</view>
+      </view>
+      <view bindtap="CourseIntroduction" class="Introduction_view">
+        <image class="Introduction_img" src="../../image/CourseIntroduction.png"></image>
+        <view class="Introduction_text">课程介绍</view>
+      </view>
+      <view bindtap="" class="Introduction_view">
+        <image class="Introduction_img" src="../../image/Faculty.png"></image>
+        <view class="Introduction_text">师资力量</view>
+      </view>
+      <view bindtap="" class="Introduction_view">
+        <image class="Introduction_img" src="../../image/Styleshow.png"></image>
+        <view class="Introduction_text">风采展示</view>
+      </view>
+      <view bindtap="Contact" class="Introduction_view">
+        <image class="Introduction_img" src="../../image/aboutus.png"></image>
+        <view class="Introduction_text">联系我们</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 课程列表 -->
+  <view class="curriculum_schedule">
+    <view class='{{num==01?"curriculum_text1":"curriculum_text"}}' data-num='01' catchtap="curriculum">小学课程</view>
+    <view class='{{num==02?"curriculum_text1":"curriculum_text"}}' data-num='02' catchtap="curriculum">初中课程</view>
+    <view class='{{num==03?"curriculum_text1":"curriculum_text"}}' data-num='03' catchtap="curriculum">高中课程</view>
+    <view class='{{num==04?"curriculum_text1":"curriculum_text"}}' data-num='04' catchtap="curriculum">艺术课程</view>
+  </view>
+  <view class="curriculum_schedule3">
+    <view class='curriculum_view'>
+      <view class='{{num==1?"curriculum_border":"curriculum_border1"}}'></view>
+    </view>
+    <view class='curriculum_view'>
+      <view class='{{num==2?"curriculum_border":"curriculum_border1"}}'></view>
+    </view>
+    <view class='curriculum_view'>
+      <view class='{{num==3?"curriculum_border":"curriculum_border1"}}'></view>
+    </view>
+    <view class='curriculum_view'>
+      <view class='{{num==4?"curriculum_border":"curriculum_border1"}}'></view>
+    </view>
+  </view>
+  <view class="item">
+    <block wx:for="{{item}}" wx:key="this">
+      <view class="item_view" bindtap='tap' data-id='{{item.id}}'>
+        <image src="http://39.108.117.174:999{{item.imageUrl}}" class="item_image" />
+        <view class="item_block">
+          <view class="item_text">{{item.name}}</view>
+          <view class="item_time">课程时间：{{startDate}}~{{endDate}}</view>
+          <view class="item_time">上课时间：周日、周六 10:00-16:00</view>
+          <view class="item_money">
+            <label class='item_label2'>￥</label>
+            <label class='item_label'> {{item.discountPrice ? item.discountPrice:item.originalPrice}}</label>
+            <label class='item_label3'>
+              ￥ {{item.originalPrice ? item.originalPrice:item.discountPrice}}
+            </label>
+            <view class="item_button">查看课程</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

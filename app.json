@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Topicdetails/Topicdetails",
+    "pages/item/item",
+    "pages/Authorized/Authorized",
+    "pages/Information4/Information4",
+    "pages/Topic/Topic",
+    "pages/grades/grades",
+    "pages/subject/subject",
+    "pages/my/my",
+    "pages/homework/homework",
+    "pages/placeorder/placeorder",
+    "pages/Purchase/Purchase",
+    "pages/Personal/Personal",
+    "pages/Members/Members",
+    "pages/Itembank/Itembank",
+    "pages/leave/leave",
+    "pages/ChoosingClasses/ChoosingClasses",
+    "pages/management/management",
+    "pages/Check-in/Check-in",
+    "pages/Studentdetails/Studentdetails",
+    "pages/search/search",
+    "pages/signup/signup",
+    "pages/Information2/Information2",
+    "pages/Attendance_Record/Attendance_Record",
+    "pages/Attendance_status/Attendance_status",
+    "pages/Order/Order",
+    "pages/Application/Application",
+    "pages/refund/refund",
+    "pages/details/details",
+    "pages/Opinion/Opinion",
+    "pages/Contact/Contact",
+    "pages/Information3/Information3",
+    "pages/Information/Information",
+    "pages/Course_Details/Course_Details",
+    "pages/Failure/Failure",
+    "pages/Successful/Successful",
+    "pages/CourseIntroduction/CourseIntroduction",
+    "pages/Feedback/Feedback",
+    "pages/Student/Student"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#30CD76",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/index2.png",
+        "selectedIconPath": "image/index.png"
+      },
+      {
+        "pagePath": "pages/signup/signup",
+        "text": "课程",
+        "iconPath": "image/Signup.png",
+        "selectedIconPath": "image/Signup2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/my2.png"
+      }
+    ]
+  }
+}

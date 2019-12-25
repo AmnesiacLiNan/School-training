@@ -1,0 +1,97 @@
+<!--pages/Itembank/Itembank.wxml-->
+<!--pages/signup/signup.wxml-->
+
+<view class="show">
+  <view class="top">
+    <view class="top_view1" bindtap='search'>
+      <image class="top_img" src="../../image/ss.png"></image>
+      <label>搜索课程</label>
+    </view>
+    <view class="top_view2" bindtap="grade">
+      <label class="top_text" style='color:{{text_color}}'>{{grade_text}}</label>
+      <image src="{{show2?img2:img}}" class="top_img2"></image>
+    </view>
+  </view>
+  <!-- 大年级菜单 -->
+  <view wx:if="{{show2}}" class='gradebox'>
+    <view class="show2">
+      <view class="show2_view">
+        <view wx:for="{{item}}" wx:for-item="root" wx:key>
+          <view wx:if="{{root.code==0}}">
+            <view wx:for="{{root.types}}" wx:for-item="type" wx:key class="show2_text">
+              <view bindtap="grade_buttom" data-num='{{type.code}}' class=" {{show_num == type.code ? 'show2_text2' : ''}}">{{type.name}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 小年级菜单 -->
+      <view class="show2_view2">
+        <view wx:for="{{item2}}" wx:key>
+          <view bindtap="grade_buttom2" data-num='{{item.code}}' data-name='{{item.name}}' class=" {{show_num2 == item.code ? 'show2_text4' : 'show2_text3'}}">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 选择学科 -->
+  <view wx:if="{{show}}">
+    <view class="Middle">
+      <view class="{{List1?'Middle_view2':'Middle_view'}}" bindtap="List1">
+        <label class="top_text">{{subject_name}}</label>
+        <image src="{{showbox?img2:img}}" class="top_img2"></image>
+      </view>
+      <view class="{{List2?'Middle_view2':'Middle_view'}}" bindtap="List2">
+        <label class="top_text">{{Semester_name}}</label>
+        <image src="{{showbox2?img2:img}}" class="top_img2"></image>
+      </view>
+      <view class="{{List3?'Middle_view2':'Middle_view'}}" bindtap="List3">
+        <label class="top_text">{{classes_name}}</label>
+        <image src="{{showbox3?img2:img}}" class="top_img2"></image>
+      </view>
+        <view class="Middle_view" bindtap="List4">
+        <label class="top_text">{{dx}}</label>
+        <image src="{{img}}" class="top_img2"></image>
+      </view>
+    </view>
+    <!-- 学科列表 -->
+    <view class="List" wx:if="{{List1}}">
+      <view wx:for="{{item}}" wx:for-item="root" wx:key>
+        <view wx:if="{{root.code==1}}">
+          <view wx:for="{{root.types}}" wx:for-item="type" wx:key class="List_label2">
+            <label bindtap="subject" data-num='{{type.code}}' data-name='{{type.name}}' class=" {{subject_num == type.code ? 'List_label' : ''}}">{{type.name}}</label>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 阶段 -->
+    <view class="List" wx:if="{{List2}}">
+      <view wx:for="{{item}}" wx:for-item="root" wx:key>
+        <view wx:if="{{root.code==4}}">
+          <view wx:for="{{root.types}}" wx:for-item="type" wx:key class="List_label2">
+            <label bindtap="Semester" data-num='{{type.code}}' data-name='{{type.name}}' class=" {{Semester_num == type.code ? 'List_label' : ''}}">{{type.name}}</label>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 章节 -->
+    <view class="List" wx:if="{{List3}}">
+      <view wx:for="{{item}}" wx:for-item="root" wx:key>
+        <view wx:if="{{root.code==5}}">
+          <view wx:for="{{root.types}}" wx:for-item="type" wx:key class="List_label2">
+            <label bindtap="classes" data-num='{{type.code}}' data-name='{{type.name}}' class=" {{classes_num == type.code ? 'List_label' : ''}}">{{type.name}}</label>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="item">
+        <view wx:for="{{kc}}" wx:key>
+            <view class="item_view" bindtap="topic" data-itemBankIds="{{item.itemBankIds}}">
+              <!-- <view class='item_tm'>{{}}</view> -->
+              <view class='item_name'>{{item.groupName}}</view>
+              <view class='item_number'>{{item.itemBankCount}}</view>
+              <image src='../../image/jt3.png' class='item_img'></image>
+            </view>
+        </view>
+    </view>
+  </view>
+  <view class='masking' wx:if='{{showbox||showbox2||showbox3}}'></view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/Feedback/Feedback.wxml-->
+<view class='tb'>
+<view class='Feedback'>
+  <input class='contact' type="textarea" placeholder="请输入您的联系方式" placeholder-style="color:#999999" maxlength='18' value="{{inputphone}}" bindinput="inputphone"></input>
+  <textarea placeholder="请描述您需要反馈的内容" placeholder-style="font-size:18px;color:#999999;" maxlength='400' value="{{inputtext}}" bindinput="inputtext"></textarea>
+  </view>
+  <view class='Submission' bindtap="tj">提交</view>
+</view>

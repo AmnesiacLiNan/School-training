@@ -1,0 +1,18 @@
+<!--pages/Student/Student.wxml-->
+<view class="zym">
+  <view class="from">
+    <view class="from_view"><label>学生姓名：</label>
+      <input></input>
+    </view>
+    <view class="from_view2"><label>家庭住址：</label>
+      <input></input>
+    </view>
+    <view class="from_view2"><label>家长姓名：</label>
+      <input></input>
+    </view>
+    <view class="from_view2"><label>联系电话：</label>
+      <input></input>
+    </view>
+  </view>
+  <button>确认提交</button>
+</view>

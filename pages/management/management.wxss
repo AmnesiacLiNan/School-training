@@ -1,0 +1,83 @@
+/* pages/ChoosingClasses/ChoosingClasses.wxss */
+
+page {
+  background: #f5f5f5;
+}
+
+.box {
+  background: white;
+  width: 92%;
+  margin: 30rpx auto 0;
+}
+
+.top {
+  padding: 32rpx 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.top_text1 {
+  font-size: 28rpx;
+  color: #30cd76;
+  margin-left: 30rpx;
+}
+
+.top_text2 {
+  float: right;
+  font-size: 24rpx;
+  color: #999;
+  margin-right: 24rpx;
+}
+
+.img {
+  width: 14rpx;
+  height: 24rpx;
+  float: right;
+  margin-right: 30rpx;
+  margin-top: 7rpx;
+}
+
+.middle {
+  margin: 0 auto;
+  width: 92%;
+  padding: 30rpx 0;
+  display: flex;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.imgUrl {
+  width: 160rpx;
+  height: 160rpx;
+  background: red;
+}
+
+.middle_right {
+  margin-left: 20rpx;
+}
+
+.middle_text1 {
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 14rpx;
+}
+
+.middle_text2 {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 40rpx;
+}
+
+.text {
+  margin: 30rpx 30rpx 20rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+
+.text2 {
+  font-size: 26rpx;
+  margin-left: 30rpx;
+  color: #999;
+  padding-bottom: 30rpx;
+}
+.text_label{
+ color: #333;
+}

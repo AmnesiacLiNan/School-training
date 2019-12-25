@@ -1,0 +1,28 @@
+<!--pages/leave/leave.wxml-->
+<view>
+  <view class='top'>
+    <label>请假人</label>
+    <input placeholder='请输入名字' placeholder-style='color:#B3B3B3'></input>
+  </view>
+  <view class='top2'>
+    <view class='top2_text'>原因</view>
+    <view class='top2-text2'>
+      <textarea placeholder='请输入请假原因...' placeholder-style='color:#B3B3B3'></textarea>
+    </view>
+  </view>
+  <view class='time'>
+    <view class='time_text'>时间</view>
+    <picker mode="date" value="{{date1}}" start="2019-8-31" end="2099-12-31" bindchange="bindDateChange">
+      <view class="picker">
+        {{date1 ? date1 : "开始时间"}}
+      </view>
+    </picker>
+    <view class='time_text2'>—</view>
+    <picker mode="date" value="{{date2}}" start="2019-8-31" end="2099-12-31" bindchange="bindDateChange2">
+      <view class="picker">
+        {{date2 ? date2 : "结束时间"}}
+      </view>
+    </picker>
+  </view>
+  <view class='botton'>提交</view>
+</view>

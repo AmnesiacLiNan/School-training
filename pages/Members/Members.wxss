@@ -1,0 +1,91 @@
+/* pages/Members/Members.wxss */
+
+.view {
+  display: flex;
+  padding: 6rpx;
+  flex-wrap: wrap;
+}
+
+page {
+  background: #f5f5f5;
+}
+
+.box {
+  background: white;
+  border-radius: 10px;
+  width: 230rpx;
+  margin: 6rpx;
+  padding-bottom: 30rpx;
+}
+
+.box_img {
+  width: 100%;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.img {
+  background: red;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.img2 {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.box_img2 {
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.name {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.nj {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.label {
+  color: #999;
+}
+
+.buttom {
+  position: absolute;
+  height: 100rpx;
+  background: white;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+}
+.buttom_img{
+  margin: 32rpx 20rpx 32rpx 60rpx;
+}
+.img3{
+  width: 36rpx;
+  height: 36rpx;
+}
+.buttom_text{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.buttom_button{
+  position: absolute;
+  right: 30rpx;
+  top: 12rpx;
+  width: 340rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  background: #30CD76;
+  color: white;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 15px;
+}

@@ -1,0 +1,45 @@
+<!--pages/Information/Information.wxml-->
+<view class='view'>
+  <!-- 选项卡 -->
+  <view class='box' wx:if="{{item}}" wx:for="{{item}}" wx:key wx:for-index="index"  wx:for-item="item">
+    <!-- 上面部分 -->
+    <view class='box_top'>
+      <!-- 左边部分 -->
+      <!-- <view class='box_bottom'>
+        <image src='../../image/yes.png' class='img'></image>
+      </view> -->
+      <view class='box_left'>
+        <!-- 名字 -->
+        <view class='name'>{{item.name}}</view>
+        <!-- 性别 -->
+        <view class='text'>性别：{{item.sex=='1'?"男":"女"}}</view>
+        <!-- 城市 -->
+        <view class='text'>城市：{{item.city}}</view>
+        <!-- 学校 -->
+        <view class='text'>学校：{{item.school}}</view>
+      </view>
+      <!-- 中间部分 -->
+      <view>
+        <!-- 手机号 -->
+        <!-- <view class='name'>{{}}</view> -->
+        <!-- 年龄 -->
+        <view class='text2 text'>年龄：{{item.age}}</view>
+        <!-- 年级 -->
+        <view class='text'>年级：{{item.gardeName}}</view>
+      </view>
+      <!-- 右边部分 -->
+      <view>
+        <!-- 箭头 -->
+        <image src='../../image/xg.png' class='jt' bindtap="xg"        
+            data-index="{{index}}"></image>
+      </view>
+    </view>
+    <view class="img_box">
+    <image src="../../image/no2.png" class="img_no" bindtap="delete" data-id="{{item.id}}"></image>
+    </view>
+  </view>
+  <view class='ts' wx:if="{{item==''}}">
+    请添加孩子信息...
+  </view>
+  <view class='button' bindtap='tj'>添加孩子信息</view>
+</view>

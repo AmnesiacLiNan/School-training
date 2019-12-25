@@ -1,0 +1,13 @@
+<!--pages/Topic/Topic.wxml-->
+<view>
+  <view wx:for="{{item}}" wx:key>
+    <view class="box">
+      <image src="{{item.click?'../../image/yes.png':'../../image/no3.png'}}" class="img1" bindtap="img" id="{{item.id}}"></image>
+      <view class="text"  bindtap="subject" data-id2="{{item.id}}">{{item.name}}</view>
+      <image src="../../image/jt3.png" class="img2"></image>
+    </view>
+  </view>
+</view>
+<view class="button">
+  <view bindtap="button">选择班次</view>
+</view>

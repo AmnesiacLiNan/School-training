@@ -1,0 +1,48 @@
+<!--pages/Application/Application.wxml-->
+<view>
+  <view class='box_top'>
+    <view class='box_top1'>
+      <label>姓名</label>
+      <input placeholder='请输入姓名' class='box_input' bindinput="bindInput"></input>
+    </view>
+    <view class='box_top2'>
+      <textarea placeholder='请输入退款原因（选填）...' bindinput="bindtext"></textarea>
+    </view>
+  </view>
+  <view class='Choice'>
+    <view class='Choice_view' bindtap='tap1'>
+      <image src="{{img1 ? '../../image/yes3.png':'../../image/no3.png'}}"></image>
+      <label>支付宝</label>
+    </view>
+    <view class='Choice_view' bindtap='tap2'>
+      <image src="{{img2 ? '../../image/yes3.png':'../../image/no3.png'}}"></image>
+      <label>银行卡</label>
+    </view>
+  </view>
+  <view class='bottom' wx:if="{{img1}}">
+    <view class='box_bottom'>
+      <label>收款人</label>
+      <input placeholder='请输入支付宝真实姓名' class='box_input' bindinput="bindzfb"></input>
+    </view>
+    <view class='box_bottom'>
+      <label>账号</label>
+      <input placeholder='请输入支付宝账号' class='box_input' type='number'  bindinput="bindzfbnumber"></input>
+    </view>
+  </view>
+  <view class='bottom' wx:if="{{img2}}">
+    <view class='box_bottom'>
+      <label>收款人</label>
+      <input placeholder='请输入银行卡户主名' class='box_input' bindinput="bindyhk"></input>
+    </view>
+    <view class='box_bottom'>
+      <label>银行</label>
+      <input placeholder='例如:工商银行XX支行' class='box_input' bindinput="bindyhkname"></input>
+    </view>
+    <view class='box_bottom'>
+      <label>卡号</label>
+      <input placeholder='请输入银行卡账号' class='box_input' type='number' bindinput="bindyhknumber"></input>
+    </view>
+  </view>
+  <view class='botton' bindtap='go' wx:if="{{img1}}">提交</view>
+  <view class='botton' bindtap='go2' wx:if="{{img2}}">提交</view>
+</view>

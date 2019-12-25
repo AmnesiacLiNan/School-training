@@ -1,0 +1,25 @@
+<!--pages/ChoosingClasses/ChoosingClasses.wxml-->
+<view>
+  <view class='box' wx:for="{{item}}" wx:key>
+    <view class='top'>
+      <label class='top_text1'>{{item.takeStatus}}</label>
+      <image src='../../image/jt3.png' class='img'></image>
+      <label class='top_text2' data-shiftId="{{item.shiftId}}" bindtap="ck">查看</label>
+    </view>
+    <view class='middle'>
+      <view class='middle_left'>
+        <image class='imgUrl' src="http://39.108.117.174:999{{item.imageUrl}}"/>
+      </view>
+      <view class='middle_right'>
+        <view class='middle_text1'>{{item.name}}</view>
+        <view class='middle_text2'>{{item.semesterName}}</view>
+      </view>
+    </view>
+    <view class='text'>课程时间：
+      <label class='text_label'>{{startDate}}~{{endDate}}</label>
+    </view>
+    <view class='text2'>上课时间：
+      <label class='text_label'>周日、周六 10:00-16:00</label>
+    </view>
+  </view>
+</view>

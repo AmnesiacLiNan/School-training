@@ -1,0 +1,71 @@
+<!--pages/homework/homework.wxml-->
+<view class="xz_top" bindtap="xzxs">
+  <label class="xz_label1">{{xz_list[arr].name?xz_list[arr].name:'请选择学生'}}</label>
+  <label class="xz_label2">年级:{{xz_list[arr].gardeName}}</label>
+  <image src="../../image/jt1.png" class="jt_buttom"></image>
+</view>
+<view class="curriculum_schedule">
+  <view class="{{num==='' ? 'curriculum_text1':'curriculum_text'}}" data-num='' catchtap="curriculum">全部</view>
+  <view class="{{num==='未完成'?'curriculum_text1':'curriculum_text'}}" data-num='未完成' catchtap="curriculum">未完成</view>
+  <view class="{{num==='已完成'?'curriculum_text1':'curriculum_text'}}" data-num='已完成' catchtap="curriculum">已完成</view>
+</view>
+<view class="curriculum_schedule">
+  <view class='curriculum_view'>
+    <view class="{{num===''? 'curriculum_border':'curriculum_border1'}}"></view>
+  </view>
+  <view class='curriculum_view'>
+    <view class="{{num==='未完成'?'curriculum_border':'curriculum_border1'}}"></view>
+  </view>
+  <view class='curriculum_view'>
+    <view class="{{num==='已完成'?'curriculum_border':'curriculum_border1'}}"></view>
+  </view>
+</view>
+
+<view class='box'>
+  <view wx:for="{{item}}" wx:key class="box_v">
+    <view class='box_view' wx:if="{{item.subjectName}}">
+      <view class='name'>
+        <label class='label_left'>{{item.subjectName}}</label>
+        <label class='label_right'>{{item.completion}}</label>
+      </view>
+      <view class='time'>
+        <label class='label_left'>{{item.itemBankCount}}题</label>
+        <label class='label_right'>发布时间：{{item.publishTime}}</label>
+      </view>
+    </view>
+    <view class='button' wx:if="{{item.subjectName}}">
+      <label class='label2' wx:if="{{item.completion==='未完成'}}" bindtap="go" data-id="{{item.itemWorkIds}}">去完成</label>
+      <label class='label3' wx:if="{{item.completion==='已完成'}}" bindtap="">查看</label>
+    </view>
+  </view>
+  <view class="show" wx:if="{{show}}"></view>
+  <scroll-view class="buttom" wx:if="{{show}}">
+    <view class='box_list' wx:for="{{xz_list}}" wx:key wx:for-index="index" wx:for-item="item">
+      <!-- 上面部分 -->
+      <view class='list_top' bindtap="xz" data-index="{{index}}">
+        <view class='list_left'>
+          <!-- 名字 -->
+          <view class='list_name'>{{item.name}}</view>
+          <!-- 性别 -->
+          <view class='list_text'>性别：{{item.sex=='1'?"男":"女"}}</view>
+          <!-- 城市 -->
+          <view class='list_text'>城市：{{item.city}}</view>
+          <!-- 学校 -->
+          <view class='list_text'>学校：{{item.school}}</view>
+        </view>
+        <!-- 中间部分 -->
+        <view>
+          <!-- 年龄 -->
+          <view class='list_text2 list_text'>年龄：{{item.age}}</view>
+          <!-- 年级 -->
+          <view class='list_text'>年级：{{item.gardeName}}</view>
+        </view>
+        <!-- 右边部分 -->
+        <view>
+          <!-- 箭头 -->
+          <image src='../../image/jt3.png' class='jt'></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

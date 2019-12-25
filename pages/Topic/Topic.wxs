@@ -1,0 +1,13 @@
+
+// 支持es4语法
+var filter = function(subjects,id){
+  console.log(subjects)
+  console.log("dayin",subjects.find(function(n){
+    n == id
+  }))
+  return subjects.indexOf(id)
+}  
+// 导出对外暴露的属性
+module.exports = {
+  filter: filter
+}

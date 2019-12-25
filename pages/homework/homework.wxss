@@ -1,0 +1,210 @@
+/* pages/homework/homework.wxss */
+
+.curriculum_schedule {
+  background: white;
+  display: flex;
+  padding: 0 24rpx 10rpx;
+  /* margin-top: 10rpx; */
+}
+
+.curriculum_border {
+  margin: 0 auto;
+  width: 30rpx;
+  height: 10rpx;
+  background: #30cd76;
+  border-radius: 2.5px;
+}
+
+.curriculum_border1 {
+  width: 30rpx;
+}
+
+.curriculum_view {
+  width: 33%;
+  text-align: center;
+}
+
+.curriculum_text {
+  width: 33%;
+  text-align: center;
+  font-size: 32rpx;
+  color: #999;
+}
+
+.curriculum_text1 {
+  width: 33%;
+  text-align: center;
+  font-size: 32rpx;
+  color: #30cd76;
+}
+
+.box {
+  margin: 30rpx auto 0;
+  width: 92%;
+}
+
+page {
+  background: #f5f5f5;
+}
+
+.box_view {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.name {
+  padding: 26rpx 0;
+  font-size: 32rpx;
+}
+
+.label_left {
+  margin-left: 30rpx;
+}
+
+.label_right {
+  margin-right: 30rpx;
+  float: right;
+}
+
+.time {
+  padding-bottom: 30rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.button {
+  height: 100rpx;
+}
+
+.label1 {
+  width: 150rpx;
+  display: block;
+  border: 1px solid #ccc;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 26rpx;
+  float: right;
+  margin: 20rpx 30rpx;
+  color: #666;
+}
+
+.label2 {
+  width: 150rpx;
+  display: block;
+  border: 1px solid #30cd76;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 26rpx;
+  float: right;
+  margin: 20rpx 30rpx;
+  color: #30cd76;
+}
+
+.label3 {
+  width: 150rpx;
+  display: block;
+  border: 1px solid #ccc;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 26rpx;
+  float: right;
+  margin: 20rpx 30rpx;
+  color: #ccc;
+}
+
+.box_v {
+  background: white;
+  margin-top: 30rpx;
+}
+.show{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  left: 0;
+}
+.buttom {
+  position: fixed;
+  background: white;
+  width: 100%;
+  bottom: 0;
+  height: 300rpx;
+  left: 0;
+  z-index: 9999;
+}
+
+.box_list {
+  padding: 40rpx 30rpx 20rpx 30rpx;
+  display: flex;
+  position: relative;
+}
+
+.list_left {
+  width: 380rpx;
+  height: 246rpx;
+}
+
+.list_name {
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+
+.list_text2 {
+  margin-top: 82rpx;
+}
+
+.list_text {
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+
+.list_top {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.xz_top {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: white;
+}
+
+.jt {
+  width: 19rpx;
+  height: 32rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 130rpx;
+}
+
+.jt_buttom {
+  width: 16rpx;
+  height: 10rpx;
+  margin-left: 30rpx;
+
+}
+
+.xz_label1 {
+  font-weight: 30rpx;
+  margin-left: 30rpx;
+}
+
+.xz_label2 {
+  color: #999;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}

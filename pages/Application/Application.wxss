@@ -1,0 +1,67 @@
+/* pages/Application/Application.wxss */
+.box_top{
+ background: white;
+ margin-top: 32rpx;
+}
+.box_top1{
+  display: flex;
+  margin:0 30rpx;
+  padding: 46rpx 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+.box_input{
+  margin-left: 40rpx;
+}
+.box_top2 textarea{
+  height: 200rpx;
+  margin: 40rpx;
+  width: 90%;
+}
+page{
+  background: #f0f0f0;
+}
+.Choice{
+  display: flex;
+  width: 100%;
+  margin-top: 28rpx;
+  background: white;
+  border-bottom: 1px solid #F5F5F5;
+}
+.Choice_view{
+  width: 50%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.Choice_view image{
+  width: 36rpx;
+  height: 36rpx;
+  margin-right:10rpx; 
+}
+.Choice_view image,.Choice_view label{
+  vertical-align: middle;
+}
+.bottom{
+  background: white;
+}
+.box_bottom{
+  display: flex;
+  padding: 46rpx 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+.box_bottom label{
+  width: 100rpx;
+  margin-left: 30rpx;
+}
+.botton{
+  width: 92%;
+  height: 88rpx;
+  margin: 0 auto;
+  margin-top: 100rpx;
+  text-align: center;
+  background: #30CD76;
+  line-height: 88rpx;
+  color: white;
+  border-radius:15px; 
+
+}

@@ -1,0 +1,40 @@
+<!--pages/Information/Information.wxml-->
+<view class='view'>
+  <!-- 选项卡 -->
+  <view class='box'>
+    <!-- 上面部分 -->
+    <view class='box_top'>
+      <!-- 左边部分 -->
+      <view class='box_left'>
+        <!-- 名字 -->
+        <view class='name'>李南溪{{}}</view>
+        <!-- 性别 -->
+        <view class='text'>性别：{{}}</view>
+        <!-- 城市 -->
+        <view class='text'>城市：{{}}</view>
+        <!-- 学校 -->
+        <view class='text'>学校：{{}}</view>
+      </view>
+      <!-- 中间部分 -->
+      <view>
+        <!-- 手机号 -->
+        <view class='name'>13576563960{{}}</view>
+        <!-- 年龄 -->
+        <view class='text'>年龄：{{}}</view>
+        <!-- 年级 -->
+        <view class='text'>年级：{{}}</view>
+      </view>
+      <!-- 右边部分 -->
+      <view>
+        <!-- 箭头 -->
+        <image src='../../image/jt3.png' class='jt'></image>
+      </view>
+    </view>
+    <!-- 下面部分 -->
+    <view class='box_bottom'>
+    <image src='../../image/yes2.png' class='img'></image>
+    <label>设为默认</label>
+    <image src='../../image/no2.png' class='img2'></image>
+    </view>
+  </view>
+</view>

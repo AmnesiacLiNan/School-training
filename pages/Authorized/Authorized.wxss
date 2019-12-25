@@ -1,0 +1,35 @@
+/* pages/Authorized/Authorized.wxss */
+.text{
+  font-weight: bold;
+  font-size: 72rpx;
+  color: #333;
+  text-align: center;
+  margin-top: 172rpx;
+}
+.text2{
+  font-size: 26rpx;
+  color: #999999;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.buttom{
+  background: #30CD76;
+  color: white;
+  width: 90%;
+  margin: 209rpx auto;
+  height: 100rpx;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 100rpx;
+}
+.wx{
+  width: 56rpx;
+  height: 44rpx;
+  margin-right: 10rpx;
+}
+.text3{
+  font-size: 32rpx;
+}
+.wx,.text3{
+  vertical-align: middle;
+}

@@ -1,0 +1,111 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class='top'>
+    <image src='../../image/bj.png' class='bj'></image>
+    <image bindtap="bindViewTap" class='tx' src="{{userInfo.a.headUrl}}" mode="cover"></image>
+    <text bindtap="bindViewTap" class='name'>{{userInfo.a.name}}</text>
+    <!-- <view class='name2' wx:if="{{userInfo.type==1}}"><label>广州市{{}}</label><label>小学一年级{{}}</label></view> -->
+    <view class='top_box' wx:if="{{userInfo.type==0}}">
+      <view class='top_box_view1' bindtap='Order'>
+        <label class='box_view1_label1'>我的购课单</label>
+        <image src='../../image/jt3.png' class='box_view1_image'></image>
+        <label class='box_view1_label2'>查看全部</label>
+      </view>
+      <view class='top_box_view2'>
+        <view class='box_view2' bindtap='Unpaid' data-num='02'>
+          <image src='../../image/obligations.png' class='box_view2_image'></image>
+          <view>待付款</view>
+        </view>
+        <view class='box_view2' bindtap='Payment' data-num='03'>
+          <image src='../../image/Paymentmade.png' class='box_view2_image'></image>
+          <view>已付款</view>
+        </view>
+        <view class='box_view2' bindtap='Completed' data-num='04'>
+          <image src='../../image/Completed.png' class='box_view2_image'></image>
+          <view>已完成</view>
+        </view>
+        <view class='box_view2' bindtap='refund' data-num='05'>
+          <image src='../../image/refund.png' class='box_view2_image'></image>
+          <view>退款</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='list2' wx:if="{{userInfo.type==1}}">
+    <view class='list_view'>
+      <view class='list_image'>
+        <image src='../../image/task.png' class='list_view_image'></image>
+      </view>
+      <view class='list_text' bindtap="Itembank">
+        <label>题库</label>
+        <image src='../../image/jt3.png' class='list_view_image2'></image>
+      </view>
+    </view>
+    <view class='list_view' bindtap="management">
+      <view class='list_image'>
+        <image src='../../image/st.png' class='list_view_image'></image>
+      </view>
+      <view class='list_text'>
+        <label>班级管理</label>
+        <image src='../../image/jt3.png' class='list_view_image2'></image>
+      </view>
+    </view>
+  </view>
+  <view class='list' wx:if="{{userInfo.type==0}}">
+    <view class='list_view' bindtap='Information'>
+      <view class='list_image'>
+        <image src='../../image/information.png' class='list_view_image'></image>
+      </view>
+      <view class='list_text'>
+        <label>孩子信息</label>
+        <image src='../../image/jt3.png' class='list_view_image2'></image>
+      </view>
+    </view>
+    <view class='list_view' bindtap=''>
+      <view class='list_image'>
+        <image src='../../image/st.png' class='list_view_image'></image>
+      </view>
+      <view class='list_text' bindtap='status'>
+        <label>考勤状态</label>
+        <image src='../../image/jt3.png' class='list_view_image2'></image>
+      </view>
+    </view>
+    <view class='list_view'>
+      <view class='list_image'>
+        <image src='../../image/task.png' class='list_view_image'></image>
+      </view>
+      <view class='list_text' bindtap="homework">
+        <label>我的作业</label>
+        <image src='../../image/jt3.png' class='list_view_image2'></image>
+      </view>
+    </view>
+    <view class='list_view'>
+      <view class='list_image'>
+        <image src='../../image/service.png' class='list_view_image'></image>
+      </view>
+      <button class='list_text' open-type='contact' session-from="weapp">
+        <label>在线客服</label>
+        <!-- <contact-button type="default-dark" size="20" session-from="weapp"></contact-button> -->
+        <image src='../../image/jt3.png' class='list_view_image2'></image>
+      </button>
+    </view>
+    <view class='list_view' bindtap='Feedback'>
+      <view class='list_image'>
+        <image src='../../image/Feedback.png' class='list_view_image'></image>
+      </view>
+      <view class='list_text'>
+        <label>意见反馈</label>
+        <image src='../../image/jt3.png' class='list_view_image2'></image>
+      </view>
+    </view>
+    <view class='list_view' bindtap='Contact'>
+      <view class='list_image'>
+        <image src='../../image/Contact.png' class='list_view_image'></image>
+      </view>
+      <view class='list_text'>
+        <label>联系我们</label>
+        <image src='../../image/jt3.png' class='list_view_image2'></image>
+      </view>
+    </view>
+  </view>
+</view>

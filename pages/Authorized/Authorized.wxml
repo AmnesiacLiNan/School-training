@@ -1,0 +1,10 @@
+<!--pages/Authorized/Authorized.wxml-->
+
+<view>
+  <view class="text">隽思教育</view>
+  <view class="text2">首次登录，请使用微信登录</view>
+  <button class="buttom" open-type="getUserInfo" bindgetuserinfo="bindInfo">
+    <image src="../../image/wx.png" class="wx"></image>
+    <label class="text3">微信一键登录</label>
+  </button>
+</view>

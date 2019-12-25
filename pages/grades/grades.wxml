@@ -1,0 +1,30 @@
+<!--pages/grades/grades.wxml-->
+<view>
+  <!-- 头部 -->
+  <view>
+    <view>
+      <image src="../../image/bj.png" class="img"></image>
+    </view>
+    <!-- 正确数 总题数 -->
+    <view class="box">
+      <view class="box_view">
+        <view class="box_text">总题数</view>
+        <view class="box_text2">{{item.totalCount}}</view>
+      </view>
+      <view class="box_border"></view>
+      <view class="box_view">
+        <view class="box_text">正确数</view>
+        <view class="box_text3">{{item.rightCount}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 题目正确错误展示 -->
+  <view class="xz">选择题</view>
+  <view class="box_tm">
+    <view class="{{item.isRight==0? 'text':'text2'}}" wx:for="{{item.doworks}}" wx:key wx:for-item="item" wx:for-index="idx" bindtap="xz" data-id="{{item.id}}">{{idx+1}}</view>
+  </view>
+  <!-- 查看解析 -->
+  <!-- <view class="button">查看解析</view> -->
+  <!-- 提示 -->
+  <view class="ts">可点击题目查看解析</view>
+</view>

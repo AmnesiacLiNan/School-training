@@ -1,0 +1,18 @@
+<!--pages/Members/Members.wxml-->
+<view class='view'>
+  <view class='box' wx:for="{{item}}" wx:key>
+    <view class='box_img'>
+      <image class='img' src="../../image/tx.png" bindtap=""></image>
+    </view>
+    <view class='name'><label class='label'>姓名：</label>{{item.name}}</view>
+    <view class='nj'><label class='label'>年级：</label>{{item.gardeName}}</view>
+    <view class='box_img2' bindtap="click" data-num="{{item.id}}">
+      <image src="{{item.click?'../../image/yes.png':'../../image/no3.png'}}" class='img2'></image>
+    </view>
+  </view>
+</view>
+<view class='buttom'>
+  <view class='buttom_img'><image src="{{allselect?'../../image/yes.png':'../../image/no3.png'}}" class='img3'></image></view>
+  <view class='buttom_text' bindtap="click2">全选</view>
+  <view class='buttom_button' bindtap="publish">发布</view>
+</view>

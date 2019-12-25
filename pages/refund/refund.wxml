@@ -1,0 +1,60 @@
+<!--pages/refund/refund.wxml-->
+<view>
+  <view class='box'>
+    <view class='box_view'>
+      <label class='text1'>退款编号</label>
+      <label class='text2'>{{arr.orderId}}</label>
+    </view>
+    <view class='box_view'>
+      <label class='text1'>退款进度</label>
+      <label class='text4'>{{}}待退款</label>
+    </view>
+    <view class='box_view'>
+      <label class='text1'>退款金额</label>
+      <label class='text2'>{{arr.refundAmt}}</label>
+    </view>
+    <view class='box_view'>
+      <label class='text1'>申请时间</label>
+      <label class='text2'>{{arr.createTime}}</label>
+    </view>
+  </view>
+  <view class='box2'>
+    <view class='box_view'>
+      <label class='text1'>姓名</label>
+      <label class='text2'>{{arr.payee}}</label>
+    </view>
+    <view class='box_view'>
+      <label class='text1'>退款原因</label>
+      <label class='text5'>{{arr.refundReason}}</label>
+    </view>
+    <view class='box_view'>
+      <image class='img' src='../../image/yes3.png'></image>
+      <label class='text2' wx:if="{{arr.payType==0}}">支付宝</label>
+      <label class='text2' wx:if="{{arr.payType==2}}">银行卡</label>
+    </view>
+     <view wx:if="{{arr.payType==0}}">
+      <view class='box_view'>
+        <label class='text3'>收款人</label>
+        <label class='text2'>{{arr.payee}}</label>
+      </view>
+      <view class='box_view'>
+        <label class='text3'>账号</label>
+        <label class='text2'>{{arr.account}}</label>
+      </view>
+    </view>
+    <view wx:if="{{arr.payType==2}}">
+      <view class='box_view'>
+        <label class='text3'>收款人</label>
+        <label class='text2'>{{arr.payee}}</label>
+      </view>
+      <view class='box_view'>
+        <label class='text3'>银行</label>
+        <label class='text2'>{{arr.bankName}}</label>
+      </view>
+      <view class='box_view'>
+        <label class='text3'>卡号</label>
+        <label class='text2'>{{arr.account}}</label>
+      </view>
+    </view>
+  </view>
+</view>

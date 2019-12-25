@@ -1,0 +1,13 @@
+<!--pages/Contact/Contact.wxml-->
+<view>
+  <!-- <view class='top'></view> -->
+  <view class='text'>致电我们</view>
+  <view class='box'>
+    <view class='box_view1'>上班时间：9：00~18：00</view>
+    <view class='box_view2'>联系电话：15113656677</view>
+  </view>
+  <view class='text'>留言给我们</view>
+  <input placeholder='请输入您的联系电话' placeholder-style='color:#B3B3B3' class='box_input' maxlength='11' value="{{inputphone}}" bindinput="inputphone"></input>
+  <textarea placeholder='请输入您的疑问或者建议...' placeholder-style='color:#B3B3B3' class='box_text' value="{{inputtext}}" bindinput="inputtext"></textarea>
+  <view class='box_button' bindtap="tj">保存</view>
+</view>

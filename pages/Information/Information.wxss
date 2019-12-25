@@ -1,0 +1,70 @@
+/* pages/Information/Information.wxss */
+
+.view {
+}
+
+page {
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+}
+.box{
+  height: 376rpx;
+  width: 92%;
+  margin: 4%;
+  background: white;
+}
+.box_top{
+  border: 1px solid #f5f5f5;
+  padding: 40rpx 30rpx 20rpx 30rpx;
+  display: flex;
+  position: relative;
+}
+.jt{
+  width: 14rpx;
+  height: 26rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 130rpx;
+}
+/* 118+35 */
+.box_left{
+  width: 306rpx;
+  height: 246rpx;
+}
+.name{
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+.text{
+  font-size: 26rpx;
+  color: #666666;
+  margin-bottom: 30rpx;
+}
+.img{
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 15rpx;
+}
+.box_bottom{
+  font-size: 26rpx;
+  color: #999999;
+  position: relative;
+  height: 68rpx;
+  line-height: 68rpx;
+}
+.box_bottom label{
+  margin-left: 76rpx;
+  
+}
+.img2{
+  position: absolute;
+  right: 50rpx;
+  width: 24rpx;
+  height: 24rpx;
+  top: 20rpx;
+}

@@ -1,0 +1,45 @@
+/* pages/Feedback/Feedback.wxss */
+
+.Feedback {
+  margin-left: 5%;
+  width: 90%;
+  height: 506rpx;
+  margin-bottom: 30rpx;
+}
+
+page {
+  background: #f6f6f6;
+}
+
+textarea {
+  width: 90%;
+  margin: 30rpx auto;
+  padding: 40rpx 30rpx;
+  background: white;
+  border-radius:8px;
+}
+
+.contact {
+  display: flex;
+  height: 96rpx;
+  width: 90%;
+  background: white;
+  margin-top: 30px;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-radius:8px; 
+}
+
+.Submission {
+  /* display: flex; */
+  margin-left: 5%;
+  margin-top: 50px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  width: 90%;
+  height: 92rpx;
+  line-height: 92rpx;
+  background: #30CD76;
+  border-radius:10px; 
+}

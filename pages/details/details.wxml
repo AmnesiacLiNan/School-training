@@ -1,0 +1,94 @@
+<!--pages/details/details.wxml-->
+<view>
+  <view class='top'>
+    <image class='img' src='../../image/bj2.png'></image>
+    <view class='top2'>
+      <image src='../../image/xq.png' class='img2'></image>
+      <label class='text'>购物单状态：{{item.statusName}}</label>
+    </view>
+  </view>
+  <view class='top3'>
+    <view class='box_left'>
+      <!-- 名字 -->
+      <view class='name'>{{item.student.name}}</view>
+      <!-- 性别 -->
+      <view class='box_text'>性别：{{item.student.sex==0?'女':'男'}}</view>
+      <!-- 城市 -->
+      <view class='box_text'>城市：{{item.student.city}}</view>
+      <!-- 学校 -->
+      <view class='box_text'>学校：{{item.student.school}}</view>
+    </view>
+    <!-- 中间部分 -->
+    <view class='box_left'>
+      <!-- 手机号 -->
+      <!-- <view class='name'>{{item.appletUser.phone}}</view> -->
+      <!-- 年龄 -->
+      <view class='box_text2 box_text'>年龄：{{item.student.age}}</view>
+      <!-- 年级 -->
+      <view class='box_text'>年级：{{item.student.gardeName}}</view>
+    </view>
+  </view>
+  <view class='box'>
+    <!-- 订单详情上 -->
+    <view class='box_xq'>
+      <view class='box_img'>
+        <image class='img3' src='http://39.108.117.174:999{{item.produceSnapshot.imageUrl}}' />
+      </view>
+      <view class='box_name'>
+        <view class='name1'>{{item.produceSnapshot.name}}</view>
+        <view class='name2'>{{item.produceSnapshot.semesterName}}</view>
+      </view>
+      <view class='money'>￥
+        <label>{{item.produceSnapshot.originalPrice}}</label>
+      </view>
+    </view>
+    <!-- 订单详情下 -->
+    <view class='box_time'>
+      <view class='time1'>课程时间：
+        <label>{{startDate}}~{{endDate}}</label>
+      </view>
+      <view class='time1'>上课时间：
+        <label>周日、周六 10:00-16:00</label>
+      </view>
+    </view>
+  </view>
+  <!-- 订单信息编号 -->
+  <view class='Order_Number'>
+    <view class='Order_Number1'>
+      <label class='Order_Number1_text1'>订单编号</label>
+      <label class='Order_Number1_text2'>{{item.orderId}}</label>
+    </view>
+    <view class='Order_Number2'>
+      <label class='Order_Number1_text1'>订单创建时间</label>
+      <label class='Order_Number1_text2'>{{item.createTime}}</label>
+    </view>
+    <view class='Order_Number3'>
+      <label class='Order_Number1_text1'>学费总额</label>
+      <label class='Order_Number1_text3'>
+        <label class='Order_Number1_text4'>￥</label>{{item.produceSnapshot.discountPrice}}</label>
+    </view>
+  </view>
+  <!-- 取消订单付款 -->
+  <view class='payment'>
+    <view wx:if='{{item.statusName==="未支付"}}'>
+      <label class='payment_no' bindtap='qx' data-id="{{item.orderId}}">取消订单</label>
+      <label class='payment_yes' bindtap='fk' data-id="{{item.curriculumId}}">去付款</label>
+    </view>
+    <view wx:if='{{item.statusName==="已支付"||item.statusName==="拒绝退款"}}'>
+      <label class='payment_yes' bindtap='refund'>申请退款</label>
+    </view>
+    <view wx:if='{{item.statusName==="订单完成"}}'>
+      <label class='payment_no' bindtap='delete'>删除</label>
+    </view>
+    <view wx:if='{{item.statusName==="退款中"}}'>
+      <label class='payment_no' bindtap='Cancellation'>取消退款</label>
+      <label class='payment_yes' bindtap='Detailsrefund'>退款详情</label>
+    </view>
+    <view wx:if='{{item.statusName==="取消订单"}}'>
+      <label class='payment_no' bindtap='delete'>删除</label>
+    </view>
+    <view wx:if='{{item.statusName==="已退款"}}'>
+      <label class='payment_no' bindtap='delete'>删除</label>
+    </view>
+  </view>
+</view>

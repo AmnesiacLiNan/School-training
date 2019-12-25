@@ -1,0 +1,114 @@
+<view class='top3'>
+  <view wx:if="{{hiddenname}}" bindtap="tap">
+    <view class="hzxx">
+      <image src="../../image/xx.png" class="xx"></image> 请添加孩子信息
+    </view>
+    <image src="../../image/jt3.png" class="jt3"></image>
+  </view>
+  <view class="top3_view" wx:if="{{!hiddenname}}">
+    <view class='box_left'>
+      <!-- 名字 -->
+      <view class='name'>{{item2[i].name}}</view>
+      <!-- 性别 -->
+      <view class='box_text'>性别：{{item2[i].sex==1 ? '男':'女'}}</view>
+      <!-- 城市 -->
+      <view class='box_text'>城市：{{item2[i].city}}</view>
+      <!-- 学校 -->
+      <view class='box_text'>学校：{{item2[i].school}}</view>
+    </view>
+    <!-- 中间部分 -->
+    <view class='box_left'>
+      <!-- 手机号 -->
+      <!-- <view class='name'>1357656396i{{}}</view> -->
+      <!-- 年龄 -->
+      <view class='box_text box_text2'>年龄：{{item2[i].age}}</view>
+      <!-- 年级 -->
+      <view class='box_text'>年级：{{item2[i].gardeName}}</view>
+    </view>
+    <view bindtap="xz">
+      <image src="../../image/jt3.png" class="jt"></image>
+    </view>
+  </view>
+
+</view>
+<view class='top'>
+  <view class='top_img'>
+    <image class='img' src="http://39.108.117.174:999{{item.imageUrl}}"></image>
+  </view>
+  <view class='top_right'>
+    <view class='name2'>{{item.name}}</view>
+    <view class='money'>
+      <label class='top_money'>
+        <label class='top_money_text'>￥</label>
+        {{item.discountPrice ? item.discountPrice:item.originalPrice}}
+      </label>
+      <label class='top_money2'>￥{{item.originalPrice? item.originalPrice:item.discountPrice}}</label>
+    </view>
+  </view>
+</view>
+<view class='box'>
+  <view class='box_view'>
+    <view class='box_right'>
+      <view class='name3'>
+        <label class='name_text'>{{item.semesterName}}</label>
+        <label class='name_money'>
+          <label class='money_text'>￥</label>
+          {{item.discountPrice ? item.discountPrice:item.originalPrice}}
+        </label>
+      </view>
+      <view class='time'>课程时间：
+        <label>{{startDate}}~{{endDate}}</label>
+      </view>
+      <view class='time'>上课时间：
+        <label>周日、周六 10:00-16:00</label>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 应缴学费 -->
+<view class="yj">
+  <view class='money_text3'>
+    <label class='money_label4'>应缴学费：</label>
+    <label class='money_label2'>￥</label>
+    <label class='money_label'>{{item.discountPrice ? item.discountPrice:item.originalPrice}}</label>
+  </view>
+</view>
+<!-- 订单确认 -->
+<view class='bottom'>
+  <view class='money_text2'>
+    <label class='money_label3'>合计：</label>
+    <label class='money_label2'>￥</label>
+    <label class='money_label'>{{item.discountPrice ? item.discountPrice:item.originalPrice}}</label>
+  </view>
+  <button class='tj' bindtap="tj" data-studentId="{{item2[i].id}}" data-curriculumId="{{item.id}}" data-discountPrice="{{item.discountPrice}}" disabled="{{hiddenname}}">确认订单</button>
+</view>
+<view class="shadow" wx:if="{{shadow}}"></view>
+<scroll-view class="frame" wx:if="{{frame}}" scroll-y>
+  <view class="scroll_text">请选择孩子信息
+    <image src="../../image/no2.png" bindtap="gb" />
+  </view>
+  <view class="top3_view" wx:for="{{item3}}" wx:key wx:for-index="index">
+    <view class='box_left'>
+      <!-- 名字 -->
+      <view class='name'>{{item.name}}</view>
+      <!-- 性别 -->
+      <view class='box_text'>性别：{{item.sex==1 ? '男':'女'}}</view>
+      <!-- 城市 -->
+      <view class='box_text'>城市：{{item.city}}</view>
+      <!-- 学校 -->
+      <view class='box_text'>学校：{{item.school}}</view>
+    </view>
+    <!-- 中间部分 -->
+    <view class='box_left'>
+      <!-- 手机号 -->
+      <view class='name'></view>
+      <!-- 年龄 -->
+      <view class='box_text'>年龄：{{item.age}}</view>
+      <!-- 年级 -->
+      <view class='box_text'>年级：{{item.gardeName}}</view>
+    </view>
+    <view bindtap="xz2" data-index="{{index}}">
+      <image src="../../image/jt3.png" class="jt"></image>
+    </view>
+  </view>
+</scroll-view>

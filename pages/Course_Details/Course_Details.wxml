@@ -1,0 +1,47 @@
+<!--pages/Course_Details/Course_Details.wxml-->
+<view>
+    <swiper class="swiper" circular="true" interval="{{interval}}" autoplay="true">
+      <block wx:for="{{image}}" wx:key>
+        <swiper-item>
+           <image src="{{item}}" class="image_view" bindtap="imgYu"  data-src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  <view class='list'>
+    <view class='name'>{{item.name}}</view>
+    <view class='time'>课程时间：
+      <label>{{item.startDate}}</label>
+    </view>
+    <view class='time'>上课时间：
+      <label>周日、周六 10：00-16：00</label>
+    </view>
+    <view class='money_view'>
+      <view class='money_view_text'>
+        <label class='money_view_label'>￥</label>{{item.discountPrice ? item.discountPrice:item.originalPrice}}
+        <label class='money_view_label2' wx:if="{{item.discountPrice}}">￥{{item.originalPrice ? item.originalPrice:item.discountPrice}}</label>
+      </view>
+    </view>
+    <view class='phone' bindtap='tap'>拨打电话</view>
+  </view>
+  <view class='masking' wx:if='{{box}}'></view>
+  <view class='box' wx:if='{{box}}'>
+    <view class='box_text'>联系电话</view>
+    <view class='box_phone'>123456789</view>
+    <view class='box_botton'>
+      <view class='box_botton_text' bindtap='tap2'>取消</view>
+      <view class='box_botton_text2' bindtap='call'>拨打电话</view>
+    </view>
+  </view>
+  <view></view>
+  <view class='Partition'></view>
+  <view class='bottom'>
+    <view class='bottom_text'>课程介绍</view>
+    <image class='bottom_img' src="http://39.108.117.174:999{{item.detailImageUrl}}"></image>
+  </view>
+  <view class='bottom2'>
+    <view class='bottom2_view'>
+      <view class='bottom2_label'>在线咨询</view>
+      <view class='bottom2_label2' bindtap='sign_up'>立即报名</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/subject/subject.wxml-->
+<view>
+  <!-- 题目类型 -->
+  <view wx:for="{{item}}" wx:key>
+    <!-- 题目 -->
+    <view class="sub">
+      <label class="">1{{}}.</label> {{item.name}}
+      </view>
+    <view class="answer_box" wx:for="{{item.items}}" wx:key>
+      <!-- 选择答案 -->
+      <view class="answer">
+        <view class="answer_num">{{item.sort==1?'A':''||item.sort==2?'B':''||item.sort==3?'C':''||item.sort==4?'D':''}}</view>
+        <view class="answer_text">{{item.content}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="daan">正确答案:<label>{{item[0].answer}}</label></view>
+  <view class="text">解析:</view>
+  <view class="text2">{{item[0].itemParse}}</view>
+</view>

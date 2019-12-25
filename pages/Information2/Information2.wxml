@@ -1,0 +1,53 @@
+<!--pages/Information2/Information2.wxml-->
+<view>
+  <view class='box_top'>
+    <view class='box_view'>
+      <label class='box_text'>姓名</label>
+      <input placeholder='请输入孩子姓名' class='box_input' placeholder-style='color:#b3b3b3' value="{{inputname}}" bindinput="inputname"></input>
+    </view>
+    <view class='box_view'>
+      <label class='box_text'>手机号</label>
+      <input placeholder='请输入手机号' class='box_input' maxlength='11' placeholder-style='color:#b3b3b3' value="{{inputphone}}" bindinput="inputphone"></input>
+    </view>
+    <view class='box_view'>
+      <label class='box_text'>性别</label>
+      <view class="{{sex==1?'box_sex_view2':'box_sex_view'}}" bindtap='sex1'>
+        <image src="{{sex==1?'../../image/boy2.png':'../../image/boy.png'}}" class='box_sex'></image>
+        男
+      </view>
+      <view class="{{sex==0?'box_sex_view3':'box_sex_view'}}" bindtap='sex2'>
+        <image src="{{sex==0?'../../image/girl2.png':'../../image/girl.png'}}" class='box_sex'></image>
+        女
+      </view>
+    </view>
+    <view class='box_view'>
+      <label class='box_text'>年龄</label>
+      <input placeholder='请输入孩子年龄' class='box_input' maxlength='3' placeholder-style='color:#b3b3b3' value="{{inputage}}" bindinput="inputage"></input>
+    </view>
+    <view class='box_view'>
+      <label class='box_text'>城市</label>
+      <label class='text_name'>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker">
+            {{region[1]}}
+          </view>
+        </picker>
+      </label>
+    </view>
+    <view class='box_view'>
+      <label class='box_text'>年级</label>
+      <label class='text_name'>
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="name">
+          <view class="picker">
+            {{selectedValue.name ? selectedValue.name : "请选择孩子所在的年级"}}
+          </view>
+        </picker>
+      </label>
+    </view>
+    <view class='box_view'>
+      <label class='box_text'>学校</label>
+      <input placeholder='请输入孩子学校' class='box_input' placeholder-style='color:#b3b3b3' value="{{inputschool}}" bindinput="inputschool"></input>
+    </view>
+  </view>
+  <view class='box_button2' bindtap='tj'>保存</view>
+</view>

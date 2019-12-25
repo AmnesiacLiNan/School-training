@@ -1,0 +1,163 @@
+/* pages/Attendance_status/Attendance_status.wxss */
+
+page {
+  background: #f5f5f5;
+}
+
+.xz_top {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: white;
+}
+
+.img_jt {
+  width: 14rpx;
+  height: 24rpx;
+  float: right;
+  margin-top: 33rpx;
+  margin-right: 30rpx;
+}
+
+.jt_buttom {
+  width: 16rpx;
+  height: 10rpx;
+  margin-left: 30rpx;
+}
+
+.xz_label1 {
+  font-weight: 30rpx;
+  margin-left: 30rpx;
+}
+
+.xz_label2 {
+  color: #999;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+
+.xz_label1, .xz_label2, .jt_buttom {
+  vertical-align: middle;
+}
+
+.text2 {
+  font-size: 24rpx;
+  float: right;
+  color: #999;
+  margin-right: 10rpx;
+}
+
+.text1 {
+  font-size: 28rpx;
+  color: #30cd76;
+  margin-left: 30rpx;
+}
+
+.text1, .text2, .img_jt {
+  vertical-align: middle;
+}
+
+.top {
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.box {
+  margin: 0 auto;
+  margin-top: 30rpx;
+  width: 92%;
+  background: white;
+}
+
+.box2 {
+}
+
+.box2_top {
+  display: flex;
+  padding: 30rpx 0;
+  margin: 0 30rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.box_img {
+  width: 160rpx;
+  height: 160rpx;
+  background: red;
+}
+
+.box_right {
+  margin-left: 20rpx;
+}
+
+.name1 {
+  color: #333;
+  font-size: 28rpx;
+}
+
+.name2 {
+  margin-top: 40rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.box_bottom {
+  margin-left: 30rpx;
+  padding: 40rpx 0 24rpx 0;
+}
+
+.box_text3 {
+  margin-bottom: 28rpx;
+  font-size: 26rpx;
+}
+
+.label {
+  color: #999;
+}
+
+.buttom {
+  position: fixed;
+  background: white;
+  width: 100%;
+  bottom: 0;
+  height: 300rpx;
+}
+
+.box_list {
+  padding: 40rpx 30rpx 20rpx 30rpx;
+  display: flex;
+  position: relative;
+}
+.list_left {
+  width: 228rpx;
+  height: 246rpx;
+}
+
+.list_name {
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+.list_text2{
+  margin-top: 82rpx;
+}
+.list_text {
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+.list_top {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20rpx;
+  border-bottom:1px solid #f5f5f5; 
+}
+.jt {
+  width: 19rpx;
+  height: 32rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 130rpx;
+}

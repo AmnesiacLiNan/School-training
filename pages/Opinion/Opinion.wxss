@@ -1,0 +1,34 @@
+/* pages/Opinion/Opinion.wxss */
+page{
+  height: 100%;
+  width: 100%;
+  background: #f6f6f6;
+}
+.box_input{
+  background: white;
+  height: 100rpx;
+  width: 87%;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  padding-left: 30rpx;
+  margin-bottom: 30rpx;
+}
+.box_text{
+ background: white;
+  height: 280rpx;
+  width: 87%;
+  margin: 0 auto;
+  padding-left: 30rpx;
+  padding-top: 40rpx;
+  margin-bottom: 30rpx;
+}
+.box_button{
+  background: #30CD76;
+  width: 92%;
+  margin: 0 auto;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  color: white;
+  border-radius:15px; 
+}

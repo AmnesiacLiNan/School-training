@@ -1,0 +1,28 @@
+<!--pages/search/search.wxml-->
+<view class='box'>
+  <view class="top">
+    <image class="top_img" src="../../image/ss.png"></image>
+    <input class="top_input" placeholder='请输入课程名称' placeholder-style='color:#ccc' value="{{inputVal}}" bindinput="inputTyping"></input>
+  </view>
+  <view class='search' bindtap='ss'>搜索</view>
+</view>
+<view class="item">
+  <view wx:for="{{item}}" wx:key="this">
+    <view class="item_view">
+      <image src="http://39.108.117.174:999{{item.imageUrl}}" class="item_image" />
+      <view class="iiem_block">
+        <view class="item_text">{{item.name}}</view>
+        <view class="item_time">时间：{{startDate}}~{{endDate}}</view>
+        <view class="item_time">上课时间：周日、周六 10:00-16:00</view>
+        <view class="item_money">
+          <label class='item_label2'>￥</label>
+          <label class='item_label'>{{item.discountPrice ? item.discountPrice:item.originalPrice}}</label>
+          <label class='item_label3'>
+            ￥{{item.originalPrice ? item.originalPrice:item.discountPrice}}
+          </label>
+          <view class="item_button" bindtap='tap' data-id='{{item.id}}'>查看课程</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

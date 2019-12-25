@@ -1,0 +1,24 @@
+<!--pages/Attendance_Record/Attendance_Record.wxml-->
+<view>
+  <view class='top'>
+    <view class='top_view'>签到：{{attendanceCount1}}</view>
+    <view class='top_view2'>缺席：{{attendanceCount2}}</view>
+    <view class='top_view3'>请假：{{attendanceCount3}}</view>
+  </view>
+  <view class='box' wx:for="{{item}}" wx:key>
+    <view class='box_top'>
+      <label class='box_text1'>签到时间：{{item.attendanceTime}}</label>
+      <label class='box_text2'>{{item.attendanceName}}</label>
+    </view>
+    <view class='box_bottom'>
+      <view class='box_text3'>{{item.produceName}}</view>
+      <view class='box_bottom2'>
+        <label class='box_text4'>{{item.semesterName}}</label>
+        <label class='box_text5'>课时：{{item.period}}</label>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='box_botton' bindtap='botton'>
+  <view class='botton'>请假</view>
+  </view> -->
+</view>

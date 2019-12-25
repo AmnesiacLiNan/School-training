@@ -1,0 +1,4 @@
+<!--pages/Opinion/Opinion.wxml-->
+  <input placeholder='请输入您的联系电话' placeholder-style='color:#B3B3B3' class='box_input' maxlength='11'></input>
+  <textarea placeholder='请输入您的疑问或者建议...' placeholder-style='color:#B3B3B3' class='box_text'></textarea>
+  <view class='box_button'>保存</view>

@@ -1,0 +1,81 @@
+/* pages/Personal/Personal.wxss */
+
+.box_tx {
+  height: 192rpx;
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+  line-height: 192rpx;
+  position: relative;
+}
+
+.tx {
+  width: 130rpx;
+  border-radius: 50%;
+  position: absolute;
+  right: 74rpx;
+  height: 130rpx;
+  top: 32rpx;
+}
+
+.text {
+  font-size: 30rpx;
+  color: #999;
+  margin-left: 32rpx;
+}
+
+.jt {
+  width: 14rpx;
+  height: 24rpx;
+  text-align: right;
+  position: absolute;
+  right: 30rpx;
+  top: 92rpx;
+}
+
+.jt2 {
+  width: 14rpx;
+  height: 24rpx;
+  text-align: right;
+  position: absolute;
+  right: 30rpx;
+  top: 48rpx;
+}
+
+.box_txext {
+  height: 120rpx;
+  width: 100%;
+  line-height: 120rpx;
+  position: relative;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.text_nj {
+  position: absolute;
+  right: 74rpx;
+  top: 0;
+}
+
+.text_name {
+  position: absolute;
+  right: 74rpx;
+}
+
+.text_input {
+  position: absolute;
+  right: 74rpx;
+  top: 36rpx;
+  width: 206rpx;
+  font-size: 30rpx;
+}
+
+.button {
+  width: 90%;
+  margin-left: 5%;
+  color: white;
+  background: #30cd76;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 120rpx;
+}

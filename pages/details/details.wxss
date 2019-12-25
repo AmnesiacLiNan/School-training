@@ -1,0 +1,213 @@
+/* pages/details/details.wxss */
+
+.img {
+  width: 100%;
+  height: 160rpx;
+  background: red;
+}
+
+.top {
+  position: relative;
+}
+
+.box_left {
+  width: 378rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.box_left2 {
+  width: 220rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.name {
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+.box_text2{
+  margin-top: 37rpx;
+}
+.box_text {
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+.top3{
+  display: flex;
+  background: white;
+}
+.top2 {
+  position: absolute;
+  top: 62rpx;
+  left: 30rpx;
+}
+
+.img2 {
+  height: 40rpx;
+  width: 36rpx;
+  margin-right: 20rpx;
+}
+
+.text {
+  color: white;
+  font-size: 32rpx;
+}
+
+.img2, .text {
+  vertical-align: middle;
+}
+
+.box {
+  margin-top: 20rpx;
+  background: white;
+  position: relative;
+}
+
+.box_xq {
+  display: flex;
+  margin-bottom: 30rpx;
+}
+
+.img3 {
+  width: 160rpx;
+  height: 160rpx;
+  background: violet;
+}
+
+.box_img {
+  margin: 20rpx 20rpx 20rpx 30rpx;
+}
+
+.box_name {
+  padding-top: 34rpx;
+  width: 508rpx;
+}
+
+.name1 {
+  color: #333;
+  font-size: 28rpx;
+  height: 66rpx;
+  margin-bottom: 34rpx;
+}
+
+.name2 {
+  color: #333;
+  font-size: 32rpx;
+}
+
+.box_time {
+  border-top: 1px solid #f0f0f0;
+  margin: 0 30rpx;
+  padding-top: 40rpx;
+  padding-bottom: 30rpx;
+}
+
+.time1 {
+  margin-bottom: 20rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.time1 label {
+  color: #333;
+}
+
+.money {
+  position: absolute;
+  top: 138rpx;
+  right: 30rpx;
+  font-size: 20rpx;
+}
+
+.money label {
+  font-size: 28rpx;
+}
+
+.payment {
+  margin-top: 88rpx;
+  text-align: right;
+  padding-top: 22rpx;
+  border-top: 1px solid #f5f5f5;
+  padding-bottom: 20rpx;
+  background: white;
+  position: absolute;
+  width: 100%;
+}
+
+.payment_no {
+  width: 150rpx;
+  height: 54rpx;
+  border: 1px solid #b3b3b3;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 54rpx;
+  font-size: 26rpx;
+  color: #666;
+  display: inline-block;
+  margin-right: 30rpx;
+}
+
+.payment_yes {
+  width: 150rpx;
+  height: 54rpx;
+  border: 1px solid #30cd76;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 54rpx;
+  font-size: 26rpx;
+  color: #30cd76;
+  display: inline-block;
+  margin-right: 30rpx;
+}
+
+page {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+}
+
+.Order_Number {
+  background: white;
+  height: 200rpx;
+  margin-top: 30rpx;
+  padding: 40rpx 0;
+}
+
+.Order_Number1 {
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.Order_Number2 {
+  padding: 0 30rpx;
+}
+
+.Order_Number3 {
+  border-top: 1px solid #f0f0f0;
+  margin: 20rpx 30rpx 0 30rpx;
+  line-height: 105rpx;
+}
+
+.Order_Number1_text1 {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.Order_Number1_text2 {
+  display: block;
+  float: right;
+  font-size: 28rpx;
+}
+
+.Order_Number1_text3 {
+  display: block;
+  float: right;
+  color: #fe6d50;
+  font-size: 34rpx;
+}
+
+.Order_Number1_text4 {
+  font-size: 26rpx;
+}

@@ -1,0 +1,51 @@
+/* pages/Successful/Successful.wxss */
+
+.box_img {
+  text-align: center;
+  width: 100%;
+}
+
+.img {
+  margin-top: 150rpx;
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.box_text {
+  margin-top: 50rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #333;
+  font-weight: 500;
+}
+
+.box_text2 {
+  font-size: 28rpx;
+  text-align: center;
+  color: #666;
+  margin-top: 30rpx;
+}
+
+.box_botton {
+  margin-top: 100rpx;
+  display: flex;
+}
+
+.box_botton view {
+  width: 330rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  margin-left: 30rpx;
+  border-radius: 20px;
+}
+
+.box_botton_text {
+  background: #30cd76;
+  color: white;
+}
+
+.box_botton_text2 {
+  border: 1px solid #30cd76;
+  color: #30cd76;
+}

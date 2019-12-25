@@ -1,0 +1,45 @@
+/* pages/Student/Student.wxss */
+.zym{
+  margin: 0;
+  padding: 0;
+}
+.from{
+  background: #F6F6F6;
+  margin: 0 auto;
+  height: 566rpx;
+  padding-top: 70rpx;
+}
+.from_view{
+  height: 104rpx;
+  line-height: 104rpx;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 16rpx;
+  }
+.from_view2{
+  margin-left: 5%;
+  height: 104rpx;
+  line-height: 104rpx;
+  display: flex;
+  width: 90%;
+  background: white;
+  margin-bottom: 16rpx;
+}
+.from_view2 input,.from_view input{
+  height: 104rpx;
+}
+.from_view2 label,.from_view label{
+  margin-left: 32rpx;
+}
+button{
+  background: #FE6D50;
+  margin-top: 120rpx;
+  font-size: 32rpx;
+  width: 90%;
+  height: 92rpx;
+  line-height: 92rpx;
+  color: white;
+  border: none;
+  border-radius: inherit; 
+}

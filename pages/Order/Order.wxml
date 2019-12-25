@@ -1,0 +1,70 @@
+<view>
+  <view class='box_top'>
+    <view class="curriculum_schedule">
+      <view class='{{num==01?"curriculum_text1":"curriculum_text"}}' data-num='01' catchtap="curriculum">全部</view>
+      <view class='{{num==02?"curriculum_text1":"curriculum_text"}}' data-num='02' catchtap="curriculum">待付款</view>
+      <view class='{{num==03?"curriculum_text1":"curriculum_text"}}' data-num='03' catchtap="curriculum">已付款</view>
+      <view class='{{num==04?"curriculum_text1":"curriculum_text"}}' data-num='04' catchtap="curriculum">已完成</view>
+      <view class='{{num==05?"curriculum_text1":"curriculum_text"}}' data-num='05' catchtap="curriculum">退款</view>
+    </view>
+    <view class="curriculum_schedule">
+      <view class='curriculum_view'>
+        <view class='{{num==01?"curriculum_border":"curriculum_border1"}}'></view>
+      </view>
+      <view class='curriculum_view'>
+        <view class='{{num==02?"curriculum_border":"curriculum_border1"}}'></view>
+      </view>
+      <view class='curriculum_view'>
+        <view class='{{num==03?"curriculum_border":"curriculum_border1"}}'></view>
+      </view>
+      <view class='curriculum_view'>
+        <view class='{{num==04?"curriculum_border":"curriculum_border1"}}'></view>
+      </view>
+      <view class='curriculum_view'>
+        <view class='{{num==05?"curriculum_border":"curriculum_border1"}}'></view>
+      </view>
+    </view>
+  </view>
+  <view class='box' wx:for="{{item}}" wx:key>
+    <!-- 时间状态 -->
+    <view class='box_time'>
+      <label class='box_time_label1'>2019-02-15 10：00</label>
+      <label class='box_time_label2'>{{item.statusName}}</label>
+    </view>
+    <!-- 订单详情上 -->
+    <view class='box_xq' bindtap='orderId' data-orderId='{{item.orderId}}'>
+      <view class='box_img'>
+        <image class='img' src='http://39.108.117.174:999{{item.imageUrl}}' />
+      </view>
+      <view class='box_name'>
+        <view class='name1'>{{item.name}}</view>
+        <view class='name2'>{{item.semesterName}}</view>
+      </view>
+    </view>
+    <!-- 订单详情下 -->
+    <view class='time1'>课程时间：{{startDate}}~{{endDate}}</view>
+    <view class='time1'>上课时间：周日、周六 10:00-16:00</view>
+    <view class='money'>总额：￥
+      <label>{{item.originalPrice}}</label>
+    </view>
+    <!-- 取消订单付款 -->
+    <view class='payment' wx:if="{{item.statusName==='未支付'}}">
+      <label class='payment_no' bindtap='qx' data-id="{{item.orderId}}">取消订单</label>
+      <label class='payment_yes' bindtap='orderId' data-orderId="{{item.orderId}}">去付款</label>
+    </view>
+    <view class='payment' wx:if="{{item.statusName==='已支付'}}">
+      <label class='payment_yes' bindtap='Application' data-id="{{item.orderId}}" data-money="{{item.originalPrice}}" data-name="{{item.name}}">申请退款</label>
+    </view>
+    <view class='payment' wx:if="{{item.statusName==='已完成'}}">
+      <label class='payment_no' bindtap='delete'>删除</label>
+    </view>
+    <view class='payment' wx:if="{{item.statusName==='退款中'}}">
+      <label class='payment_no' bindtap='Cancellation'>取消</label>
+      <label class='payment_yes'>退款详情</label>
+    </view>
+    <view class='payment' wx:if="{{item.statusName==='已取消'}}">
+      <label class='payment_no' bindtap='delete'>删除</label>
+    </view>
+  </view>
+  <view class='text'>没有更多了....</view>
+</view>

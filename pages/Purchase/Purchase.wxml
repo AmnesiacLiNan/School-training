@@ -1,0 +1,46 @@
+<!--pages/Purchase/Purchase.wxml-->
+<view>
+  <view class='top'>
+    <view class='top_img'>
+      <image class='img' src="http://39.108.117.174:999{{item.imageUrl}}"></image>
+    </view>
+    <view class='top_right'>
+      <view class='name2'>{{item.name}}</view>
+      <view class='money'>
+        <label class='top_money'>
+          <label class='top_money_text'>￥</label>
+          {{item.discountPrice ? item.discountPrice:item.originalPrice}}
+        </label>
+        <label class='top_money2'>￥{{item.originalPrice? item.originalPrice:item.discountPrice}}</label>
+      </view>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='box_view'>
+      <view class='box_left'>
+        <image class='box_img' src='../../image/yes2.png'></image>
+      </view>
+      <view class='box_right'>
+        <view class='name'>
+          <label class='name_text'>{{item.semesterName}}</label>
+          <label class='name_money'>
+            <label class='money_text'>￥</label>{{item.discountPrice ? item.discountPrice:item.originalPrice}}</label>
+        </view>
+        <view class='time'>课程时间：
+          <label>{{startDate}}~{{endDate}}</label>
+        </view>
+        <view class='time'>上课时间：
+          <label>周日、周六 10:00-16:00</label>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='money_text2'>
+      <label class='money_label3'>合计：</label>
+      <label class='money_label2'>￥</label>
+      <label class='money_label'>{{item.discountPrice ? item.discountPrice:item.originalPrice}}</label>
+    </view>
+    <view class='tj' bindtap="tj">确认订单</view>
+  </view>
+</view>

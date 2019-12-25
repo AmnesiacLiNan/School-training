@@ -1,0 +1,147 @@
+/* pages/Purchase/Purchase.wxss */
+
+page {
+  background: #f5f5f5;
+}
+
+.top {
+  background: white;
+  width: 92%;
+  margin: 30rpx auto;
+  display: flex;
+}
+
+.img {
+  width: 160rpx;
+  height: 160rpx;
+  background: red;
+}
+
+.top_img {
+  padding: 30rpx;
+}
+
+.top_right {
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+.name2 {
+  font-size: 28rpx;
+}
+
+.money {
+  margin-top: 40rpx;
+}
+
+.top_money {
+  color: #fe6d50;
+  font-size: 34rpx;
+}
+
+.top_money_text {
+  font-size: 24rpx;
+}
+
+.top_money2 {
+  font-size: 24rpx;
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+
+.box {
+  background: white;
+  width: 92%;
+  margin: 0 auto;
+  border-radius:10px; 
+}
+
+.box_view {
+  display: flex;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.box_left {
+  padding: 108rpx 30rpx;
+}
+
+.box_img {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.name {
+  padding: 40rpx 0;
+}
+
+.name_text {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.name_money {
+  float: right;
+  margin-right: 30rpx;
+  color: #fe6d50;
+  font-size: 32rpx;
+}
+
+.box_right {
+  width: 564rpx;
+}
+
+.money_text {
+  font-size: 24rpx;
+}
+
+.time {
+  margin-bottom: 30rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.time label {
+  color: #333;
+}
+
+.bottom {
+  position: absolute;
+  background: white;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.money_text2 {
+  color: #fe6d50;
+}
+
+.money_label {
+  font-size: 30rpx;
+}
+
+.money_label2 {
+  font-size: 24rpx;
+  color: #fe6d50;
+}
+
+.money_label3 {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.tj {
+  position: absolute;
+  right: 30rpx;
+  z-index: 9999;
+  top: 12rpx;
+  width: 230rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  text-align: center;
+  background: #30cd76;
+  color: white;
+  border-radius: 15px;
+}

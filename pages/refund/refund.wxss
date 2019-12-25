@@ -1,0 +1,39 @@
+/* pages/refund/refund.wxss */
+page{
+  background: #f0f0f0;
+  font-size: 28rpx;
+}
+.box{
+  background: white;
+}
+.box_view{
+  margin: 0 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+.text1{
+  margin-right: 40rpx;
+  color: #999;
+}
+.box2{
+  margin-top: 30rpx;
+  background: white;
+}
+.img{
+  width: 36rpx;
+  height: 36rpx;
+   margin-right: 10rpx;
+}
+.img,label{
+  vertical-align: middle;
+}
+.text3{
+  display: inline-block;
+  width: 100rpx;
+  margin-right: 40rpx;
+  color: #999;
+}
+.text4{
+  color: #30CD76;
+}

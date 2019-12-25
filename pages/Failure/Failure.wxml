@@ -1,0 +1,12 @@
+<!--pages/Successful/Successful.wxml-->
+<view>
+  <view class='box_img'>
+    <image src='../../image/no.png' class='img'></image>
+  </view>
+  <view class='box_text'>订单支付失败</view>
+  <view class='box_text2'>支付金额：￥{{paySign}}</view>
+  <view class='box_botton'>
+    <view class='box_botton_text' bindtap="ckdd">查看订单</view>
+    <view class='box_botton_text2' bindtap='back'>返回首页</view>
+  </view>
+</view>

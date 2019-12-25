@@ -1,0 +1,61 @@
+<!--pages/Attendance_status/Attendance_status.wxml-->
+<view>
+  <view class="xz_top" bindtap="xzxs">
+    <label class="xz_label1">{{xz_list[i].name?xz_list[i].name:'请选择学生'}}</label>
+    <label class="xz_label2">年级:{{xz_list[i].gardeName}}</label>
+    <image src="../../image/jt1.png" class="jt_buttom"></image>
+  </view>
+  <view class='box' wx:for="{{item}}" wx:key data-id="{{xz_list[i].id}}" bindtap="tz">
+    <view class='top'>
+      <label class='text1'>{{item.takeStatus}}</label>
+      <image src='../../image/jt3.png' class='img_jt'></image>
+      <label class='text2'>查看考勤</label>
+    </view>
+    <view class='box2'>
+      <view class='box2_top'>
+        <view class='box_left'>
+          <image class='box_img' src="http://39.108.117.174:999{{item.imageUrl}}"></image>
+        </view>
+        <view class='box_right'>
+          <view class='name'>{{item.name}}</view>
+          <view class='name2'>{{item.semesterName}}</view>
+        </view>
+      </view>
+      <view class='box_bottom'>
+        <view class='box_text3'>
+          <label class='label'>课程时间：</label>{{startDate}}~{{endDate}}</view>
+        <view class='box_text3'>
+          <label class='label'>上课时间：</label>周日、周六 10：00-16：00</view>
+      </view>
+    </view>
+  </view>
+  <scroll-view class="buttom" wx:if="{{show}}">
+    <view class='box_list' wx:for="{{xz_list}}" wx:key wx:for-index="index" wx:for-item="item">
+      <!-- 上面部分 -->
+      <view class='list_top' bindtap="xz" data-index="{{index}}">
+        <view class='list_left'>
+          <!-- 名字 -->
+          <view class='list_name'>{{item.name}}</view>
+          <!-- 性别 -->
+          <view class='list_text'>性别：{{item.sex=='1'?"男":"女"}}</view>
+          <!-- 城市 -->
+          <view class='list_text'>城市：{{item.city}}</view>
+          <!-- 学校 -->
+          <view class='list_text'>学校：{{item.school}}</view>
+        </view>
+        <!-- 中间部分 -->
+        <view>
+          <!-- 年龄 -->
+          <view class='list_text2 list_text'>年龄：{{item.age}}</view>
+          <!-- 年级 -->
+          <view class='list_text'>年级：{{item.gardeName}}</view>
+        </view>
+        <!-- 右边部分 -->
+        <view>
+          <!-- 箭头 -->
+          <image src='../../image/jt3.png' class='jt'></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

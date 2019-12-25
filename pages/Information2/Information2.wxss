@@ -1,0 +1,110 @@
+/* pages/Information2/Information2.wxss */
+page{
+  background: #f7f7f7;
+  width: 100%;
+  height: 100%;
+}
+.box_top{
+  height: 788rpx;
+  width: 92%;
+  margin: 4%;
+  background: white;
+  border-radius:10px; 
+}
+.box_view{
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #f5f5f5;
+  margin:0 30rpx;
+  display: flex; 
+}
+.box_text{
+  color: #666666;
+  margin-left: 30rpx;
+  width: 100rpx;
+  display: block;
+}
+.box_input{
+ margin-top: 29rpx; 
+ margin-left: 40rpx;
+ color: #b3b3b3;
+}
+.box_sex{
+  width: 22rpx;
+  height: 22rpx;
+}
+.box_sex_view{
+  width: 110rpx;
+  height: 50rpx;
+  border: 1px solid #ccc;
+  border-radius:13px; 
+  text-align: center;
+  margin-top: 26rpx;
+  line-height: 50rpx;
+  margin-right: 40rpx;
+  margin-left: 40rpx;
+  color: #B3B3B3;
+  font-size: 28rpx;
+}
+.box_sex_view2{
+  width: 110rpx;
+  height: 50rpx;
+  border: 1px solid #33A0FF;
+  border-radius:13px; 
+  text-align: center;
+  margin-top: 26rpx;
+  line-height: 50rpx;
+  margin-right: 40rpx;
+  margin-left: 40rpx;
+  color: #33A0FF;
+  font-size: 28rpx;
+}
+.box_sex_view3{
+  width: 110rpx;
+  height: 50rpx;
+  border: 1px solid #FF3399;
+  border-radius:13px; 
+  text-align: center;
+  margin-top: 26rpx;
+  line-height: 50rpx;
+  margin-right: 40rpx;
+  margin-left: 40rpx;
+  color: #FF3399;
+  font-size: 28rpx;
+}
+.picker{
+  color: #b3b3b3;
+  margin-left: 40rpx;
+}
+.box_button{
+  width: 92%;
+  margin-left: 4%;
+  height: 100rpx;
+  background: white;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #666666;
+  border-radius:8px; 
+}
+.add{
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+.add,label{
+  vertical-align: middle;
+}
+.box_button2{
+  position: absolute;
+  bottom: 0;
+  width: 92%;
+  margin: 4%;
+  height: 100rpx;
+  background: #30CD76;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: white;
+  border-radius:15px; 
+}

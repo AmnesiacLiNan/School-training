@@ -1,0 +1,254 @@
+/* pages/placeorder/placeorder.wxss */
+
+.top {
+  background: white;
+  width: 92%;
+  margin: 30rpx auto 0;
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+}
+.hzxx{
+  font-size: 28rpx;
+  padding-top: 118rpx;
+  padding-left:30rpx; 
+}
+.xx{
+  width: 30rpx;
+  height: 32rpx;
+}
+.xx,.hzxx{
+  vertical-align: middle;
+}
+.jt3{
+  width: 14rpx;
+  height: 24rpx;
+  position: absolute;
+  top: 13%;
+  right: 60rpx;
+  margin-top: -12rpx;
+}
+.top3_view {
+  display: flex;
+}
+
+.img {
+  width: 160rpx;
+  height: 160rpx;
+  background: red;
+}
+
+.top_right {
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+.top_img {
+  padding: 30rpx;
+}
+
+.top3 {
+  background: white;
+  width: 92%;
+  margin: 30rpx auto;
+  height: 284rpx;
+}
+
+.box_left {
+  width: 364rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.box_text2{
+  margin-top: 80rpx;
+}
+.name {
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+
+.box_text {
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+
+page {
+  background: #f5f5f5;
+}
+
+.jt {
+  height: 26rpx;
+  width: 14rpx;
+  margin-right: 30rpx;
+  margin-top: 100rpx;
+}
+
+.box {
+  background: white;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.box_view {
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.box_img {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.name3 {
+  padding: 40rpx 0;
+}
+
+.name2 {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.name_text {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.name_money {
+  float: right;
+  margin-right: 30rpx;
+  color: #fe6d50;
+  font-size: 32rpx;
+}
+
+.box_right {
+  width: 564rpx;
+  margin-left: 30rpx;
+}
+
+.money_text {
+  font-size: 24rpx;
+}
+
+.money {
+  margin-top: 40rpx;
+}
+
+.top_money {
+  color: #fe6d50;
+  font-size: 34rpx;
+}
+
+.top_money_text {
+  font-size: 24rpx;
+}
+
+.top_money2 {
+  font-size: 24rpx;
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+
+.time {
+  margin-bottom: 30rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.time label {
+  color: #333;
+}
+
+.bottom {
+  position: absolute;
+  background: white;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.money_text2 {
+  color: #fe6d50;
+}
+
+.money_label {
+  font-size: 30rpx;
+}
+
+.money_label2 {
+  font-size: 24rpx;
+  color: #fe6d50;
+}
+
+.money_label3 {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.tj {
+  position: absolute;
+  right: 30rpx;
+  z-index: 9999;
+  top: 12rpx;
+  width: 230rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  text-align: center;
+  background: #30cd76;
+  color: white;
+  border-radius: 15px;
+}
+
+.yj {
+  text-align: right;
+  width: 92%;
+  margin: 30rpx auto;
+  background: white;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.money_text3 {
+  margin-right: 30rpx;
+  color: #fe6d50;
+}
+
+.money_label4 {
+  color: #999;
+}
+
+.frame {
+  max-height: 50%;
+  width: 100%;
+  position: fixed;
+  font-weight: bold;
+  font-size: 32rpx;
+  background: white;
+  z-index: 9999;
+  bottom: 0;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+.scroll_text{
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #F0F0F0;
+}
+.scroll_text image{
+position: absolute;
+right: 30rpx;
+width: 28rpx;
+height: 28rpx;
+top: 36rpx;
+}

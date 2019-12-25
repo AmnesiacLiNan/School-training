@@ -1,0 +1,39 @@
+<!--pages/Personal/Personal.wxml-->
+<view>
+  <view class='box_tx'>
+    <label class='text'>头像</label>
+    <image class='tx' src="{{userInfo.a.headUrl}}" mode="cover"></image>
+    <image src='../../image/jt3.png' class='jt'></image>
+  </view>
+  <view class='box_txext'>
+    <label class='text'>昵称</label>
+    <label class='text_name' bindinput="input_name" value="{{userInfo.a.name}}"  >{{userInfo.a.name}}</label>
+    <image src='../../image/jt3.png' class='jt2'></image>
+  </view>
+  <!-- <view class='box_txext'>
+    <label class='text'>手机号</label>
+    <input class='text_input' maxlength="11" placeholder='请输入手机号' placeholder-style='color:#333333'></input>
+    <image src='../../image/jt3.png' class='jt2'></image>
+  </view> -->
+  <!-- <view class='box_txext'>
+    <label class='text'>地区</label>
+    <label class='text_name'>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[1]}}
+        </view>
+      </picker>
+    </label>
+    <image src='../../image/jt3.png' class='jt2'></image>
+  </view> -->
+  <!-- <view class='box_txext' wx:if="!">
+    <label class='text'>负责年级</label>
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="name">
+      <view class="text_nj">
+        {{selectedValue.name ? selectedValue.name : "请选择负责年级"}}
+      </view>
+    </picker>
+    <image src='../../image/jt3.png' class='jt2'></image>
+  </view> -->
+  <!-- <view class='button'>保存</view> -->
+</view>

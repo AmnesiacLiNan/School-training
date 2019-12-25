@@ -1,0 +1,19 @@
+<view class='view'>
+  <view class='box' wx:for="{{item}}" wx:key>
+    <view class='box_img'>
+      <image class='img' src="../../image/tx.png" bindtap="tz" data-id="{{item.id}}"> </image>
+    </view>
+    <view class='name'>
+      <label class='label'>姓名：</label>{{item.name}}</view>
+    <view class='nj'>
+      <label class='label'>年级：</label>{{item.gardeName}}</view>
+    <view class="{{item.currAttendanceStatus==1? 'box_button1':'box_button2'}}" bindtap="tj" data-id="{{item.id}}" data-num="1" data-cur="{{item.currAttendanceStatus}}">签到</view>
+    <view class='box_buttons'>
+      <view class="{{item.currAttendanceStatus==2? 'box_buttons2':'box_buttons1'}}" bindtap="tj" data-id="{{item.id}}" data-num="2">缺勤</view>
+      <view class="{{item.currAttendanceStatus==3? 'box_buttons3':'box_buttons1'}}" bindtap="tj" data-id="{{item.id}}" data-num="3">请假</view>
+    </view>
+  </view>
+</view>
+<!-- <view class='buttom'>
+  <view>确定提交</view>
+</view> -->

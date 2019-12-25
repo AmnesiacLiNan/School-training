@@ -1,0 +1,149 @@
+/* pages/Order/Order.wxss */
+
+.box_top {
+  background: white;
+}
+
+.curriculum_text {
+  width: 20%;
+  text-align: center;
+  font-size: 32rpx;
+  color: #999;
+}
+
+.curriculum_text1 {
+  width: 20%;
+  text-align: center;
+  font-size: 32rpx;
+  color: #30cd76;
+
+}
+
+.curriculum_schedule {
+  display: flex;
+  padding: 0 24rpx;
+  padding-bottom: 18rpx;
+}
+
+.curriculum_border {
+  margin: 0 auto;
+  width: 30rpx;
+  height: 10rpx;
+  background: #30cd76;
+  border-radius: 2.5px;
+}
+
+.curriculum_border1 {
+  width: 30rpx;
+}
+
+.curriculum_view {
+  width: 20%;
+  text-align: center;
+}
+
+page {
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+}
+.box{
+  margin-top: 20rpx;
+  background: white;
+}
+.box_time{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.box_time_label1{
+  font-size: 26rpx;
+  color: #666;
+  margin-left: 30rpx;
+}
+.box_time_label2{
+  float: right;
+  margin-right: 30rpx;
+  color: #30CD76;
+  font-size: 28rpx;
+}
+.box_xq{
+  display: flex;
+  background: #FAFAFA;
+  margin-bottom: 30rpx;
+}
+.img{
+  width: 160rpx;
+  height: 160rpx;
+  background: red;
+}
+.box_img{
+  margin: 20rpx 20rpx 20rpx 30rpx;
+}
+.box_name{
+  padding-top: 34rpx;
+  width: 508rpx;
+  
+}
+.name1{
+  color: #333333;
+  font-size: 28rpx;
+  height: 66rpx;
+  margin-bottom: 34rpx;
+}
+.name2{
+  color: #333333;
+  font-size: 32rpx;
+}
+.time1{
+  margin-bottom: 20rpx;
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.money{
+  text-align: right;
+  margin-right: 30rpx;
+  font-size: 24rpx;
+}
+.money label{
+  font-size: 28rpx;
+}
+.payment{
+  text-align: right;
+  margin-top: 20rpx;
+  padding-top:22rpx;
+  border-top: 1px solid #f5f5f5; 
+  padding-bottom: 20rpx;
+}
+.payment_no{
+  width: 150rpx;
+  height: 54rpx;
+  border: 1px solid #B3B3B3;
+  text-align: center;
+  border-radius:10px;
+  line-height: 54rpx;
+  font-size: 26rpx; 
+  color: #666;
+  display: inline-block;
+  margin-right: 30rpx;
+}
+.payment_yes{
+  width: 150rpx;
+  height: 54rpx;
+  border: 1px solid #30CD76;
+  text-align: center;
+  border-radius:10px;
+  line-height: 54rpx;
+  font-size: 26rpx; 
+  color: #30CD76;
+  display: inline-block;
+  margin-right: 30rpx;
+}
+.text{
+  font-size: 24rpx;
+  text-align: center;
+  color: #999;
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+}

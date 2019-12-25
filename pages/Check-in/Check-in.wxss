@@ -1,0 +1,138 @@
+/* pages/Members/Members.wxss */
+
+.view {
+  display: flex;
+  padding: 6rpx;
+  flex-wrap: wrap;
+}
+
+page {
+  background: #f5f5f5;
+}
+
+.box {
+  background: white;
+  border-radius: 10px;
+  width: 230rpx;
+  margin: 6rpx;
+  padding-bottom: 30rpx;
+}
+
+.box_img {
+  width: 100%;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.img {
+  background: red;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.img2 {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.box_img2 {
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.name {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.nj {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.label {
+  color: #999;
+}
+
+.buttom {
+  position: absolute;
+  height: 100rpx;
+  background: white;
+  width: 100%;
+  bottom: 0;
+}
+.box_button1{
+  width: 92%;
+  margin: 0 auto;
+  background: #30CD76;
+  color: white;
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 30rpx;
+  border: 1px solid #CCCCCC;
+}
+.box_button2{
+  width: 92%;
+  margin: 0 auto;
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 30rpx;
+  border: 1px solid #CCCCCC;
+}
+.box_buttons{
+  display: flex;
+  margin-top: 20rpx;
+}
+.box_buttons1{
+  border: 1px solid #CCCCCC;
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 12px;
+  margin-left: 3%;
+  font-size: 24rpx;
+}
+.box_buttons2{
+  border: 1px solid #CCCCCC;
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 12px;
+  margin-left: 3%;
+  font-size: 24rpx;
+  background: #FA4B5F;
+  color: white;
+}
+.box_buttons3{
+   border: 1px solid #CCCCCC;
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 12px;
+  margin-left: 3%;
+  font-size: 24rpx;
+  background: #FA714B;
+  color: white;
+}
+.buttom view{
+  margin: 12rpx auto;
+  border-radius:12px;
+  color: white;
+  text-align: center;
+  width: 92%;
+  height: 76rpx;
+  line-height: 76rpx;
+  background: #30CD76; 
+}
